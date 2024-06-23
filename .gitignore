@@ -3,12 +3,11 @@
 /.pnp
 .pnp.js
 
+# yarn
+yarn.lock
+
 # testing
 /coverage
-
-# next.js
-/.next/
-/out/
 
 # production
 /build
@@ -28,10 +27,6 @@ yarn-error.log*
 .env
 # vercel
 .vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
 
 # IDE
 .vscode/*
