@@ -1,7 +1,7 @@
 import React from 'react';
-import { SRLWrapper } from 'simple-react-lightbox';
-import img1 from '../../assets/img/gallery/5.jpg';
-import img2 from '../../assets/img/gallery/6.jpg';
+// import { SRLWrapper } from 'simple-react-lightbox';
+// import img1 from '../../assets/img/gallery/5.jpg';
+// import img2 from '../../assets/img/gallery/6.jpg';
 
 function DetailsContent() {
     return (
@@ -22,7 +22,7 @@ function DetailsContent() {
                 Repellendus at accusantium dolore rerum exercitationem iusto error? Odio deleniti in
                 iste tenetur placeat excepturi eum officia ratione, vel aperiam?
             </p>
-            <SRLWrapper>
+            {/* <SRLWrapper>
                 <div className="row">
                     <div className="col-md-6 col-12">
                         <a href={img1} className="popup-gallery">
@@ -35,7 +35,7 @@ function DetailsContent() {
                         </a>
                     </div>
                 </div>
-            </SRLWrapper>
+            </SRLWrapper> */}
 
             <h2>What You Receive?</h2>
             <p>

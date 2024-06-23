@@ -16,57 +16,26 @@
 .single-service-item {
     &.service-1 {
         margin-top: 60px;
-        text-align: center;
-        padding: 60px 35px;
+        padding: 20px 20px 40px 20px;
         border-radius: 10px;
         position: relative;
         z-index: 1;
         background: #fff;
+        text-align: left;
 
-        &:hover,
-        &.active {
-            .service-bg {
-                opacity: 1;
-                visibility: visible;
-            }
-
-            .icon {
-                color: $theme-color;
-                background-color: #fff;
-            }
-
-            h3 {
-                color: #fff;
-            }
-
-            a {
-                background: $theme-color;
-                color: #000;
-                width: 60%;
-
-                @media (max-width: 767px) {
-                    width: 50%;
-                }
-
-                span {
-                    display: inline;
-                }
-            }
-        }
 
         .service-bg {
+            overflow: hidden;
             position: absolute;
             width: 100%;
             height: 100%;
-            opacity: 0;
+            opacity: 1;
             left: 0;
             top: 0;
             content: "";
             z-index: -1;
             border-radius: 10px;
-            visibility: hidden;
             transition: all 0.3s ease-in-out;
-            overflow: hidden;
 
             &::before {
                 position: absolute;
@@ -81,51 +50,72 @@
         }
 
         .icon {
-            width: 120px;
-            height: 120px;
-            margin: 0px auto;
+            width: 80px;
+            height: 80px;
             margin-bottom: 30px;
-            display: inline-block;
-            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
             color: #fff;
-            font-size: 48px;
+            font-size: 28px;
             background-color: $theme-color;
             line-height: 120px;
             transition: all 0.3s ease-in-out;
+            text-align: center;
+            color: $theme-color;
+            background-color: #fff;
+
         }
 
         h3 {
             font-size: 26px;
             letter-spacing: -1px;
             transition: all 0.3s ease-in-out;
+            color: #fff;
 
             @media (max-width: 767px) {
                 font-size: 22px;
             }
         }
 
+        p {
+            padding: 20px 0;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        .link {
+            margin: 0 auto;
+            text-align: center;
+        }
+
         a {
             display: inline;
             border-radius: 10px;
-            background-color: #f6f6f6;
+            background: $theme-color;
             padding: 19px 25px;
             line-height: 1;
             font-weight: 700;
             text-transform: capitalize;
             color: #000;
             position: absolute;
+            text-align: center;
+
+            width: 60%;
             bottom: 0;
             transform: translate(-50%, 50%);
 
             @media (max-width: 767px) {
+                width: 50%;
                 padding: 18px 24px;
                 font-weight: 500;
             }
 
             span {
-                display: none;
                 margin-right: 15px;
             }
+
         }
     }
 }
@@ -311,7 +301,8 @@
                     font-size: 100px;
                     line-height: 1;
                     color: #001248;
-                    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+                    -webkit-text-fill-color: white;
+                    /* Will override color (regardless of order) */
                     -webkit-text-stroke-width: 1px;
                     -webkit-text-stroke-color: #001248;
                 }
@@ -431,8 +422,7 @@
                 }
             }
 
-            p {
-            }
+            p {}
         }
     }
 }
@@ -531,6 +521,7 @@
     }
 
     .service-details-content-wrapper {
+
         h1,
         h2,
         h3,
@@ -565,6 +556,7 @@
                 line-height: 1.5;
                 margin: 20px 0px;
             }
+
             @media (max-width: 767px) {
                 padding: 30px 15px;
                 font-size: 18px;
@@ -592,6 +584,7 @@
         .card {
             background-color: $theme-color;
         }
+
         .card-header {
             a {
                 &:hover {
@@ -692,8 +685,7 @@
                 .contact-info {
                     overflow: hidden;
 
-                    span {
-                    }
+                    span {}
 
                     p {
                         font-weight: 600;

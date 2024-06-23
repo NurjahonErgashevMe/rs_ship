@@ -1,16 +1,16 @@
 import React from 'react';
-import { SRLWrapper } from 'simple-react-lightbox';
+// import { SRLWrapper } from 'simple-react-lightbox';
 
-function PortfolioGallery({ galeryImg }) {
+function PortfolioGallery() {
     return (
         <div className="col-lg-4 col-md-6 col-12">
             <div className="project-shot">
-                <SRLWrapper>
+                {/* <SRLWrapper>
                     <a href={galeryImg} className="popup-gallery">
                         {' '}
                         <img src={galeryImg} alt="" />
                     </a>
-                </SRLWrapper>
+                </SRLWrapper> */}
             </div>
         </div>
     );

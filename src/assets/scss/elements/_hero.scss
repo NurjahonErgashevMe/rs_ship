@@ -5,6 +5,7 @@
 .hero-1 {
     .single-slide {
         padding: 200px 0px 180px;
+        position: relative;
 
         @media (max-width: 1199px) {
             padding: 160px 0px 120px;
@@ -18,7 +19,37 @@
             padding: 100px 0px 80px;
         }
 
+        .hero-image{
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            // @media (min-width:522px) {
+            //     width: 70%;
+            // }
+        }
+
+        // &::after {
+        //     background: linear-gradient(90deg, #080c24 14.27%, rgba(8, 12, 36, .968) 29.06%, rgba(8, 12, 36, .906) 41.25%, rgba(8, 12, 36, .832) 51.56%, rgba(8, 12, 36, .711) 57.4%, #080c2400 82.4%);
+        //     content: "";
+        //     height: 100%;
+        //     left: 0;
+        //     position: absolute;
+        //     top: 0;
+        //     width: 100%;
+        //     z-index: 1;
+        // }
+
+        .text-wrapper {
+            z-index: 2;
+            position: relative;
+        }
         .hero-contents {
+
+
             p {
                 color: #fff;
                 margin-bottom: 5px;
@@ -42,196 +73,201 @@
                 @media (max-width: 767px) {
                     font-size: 70px;
                 }
+
+                @media (max-width:521px) {
+                    font-size: 40px;
+                }
             }
 
-            a {
-                margin-top: 40px;
-                margin-right: 20px;
-            }
+          .links{
+            display: flex;
+            gap: 10px;
+            margin-top: 40px;
+          }
         }
     }
 }
 
-.hero-2 {
-    overflow: hidden;
+// .hero-2 {
+//     overflow: hidden;
 
-    .single-slide {
-        padding: 185px 0px 450px;
-        background-color: $section-bg;
-        position: relative;
+//     .single-slide {
+//         padding: 185px 0px 450px;
+//         background-color: $section-bg;
+//         position: relative;
 
-        @media (max-width: 1400px) {
-            padding: 160px 0px 300px;
-        }
+//         @media (max-width: 1400px) {
+//             padding: 160px 0px 300px;
+//         }
 
-        @media (max-width: 1280px) {
-            padding: 160px 0px 250px;
-        }
+//         @media (max-width: 1280px) {
+//             padding: 160px 0px 250px;
+//         }
 
-        @media (max-width: 1200px) {
-            padding: 120px 0px 200px;
-        }
+//         @media (max-width: 1200px) {
+//             padding: 120px 0px 200px;
+//         }
 
-        @media (max-width: 991px) {
-            padding: 100px 0;
-        }
+//         @media (max-width: 991px) {
+//             padding: 100px 0;
+//         }
 
-        .hero-contents {
-            h1 {
-                font-size: 120px;
-                line-height: 1;
-                display: inline-block;
-                color: $second-color;
-                margin-right: 50px;
+//         .hero-contents {
+//             h1 {
+//                 font-size: 120px;
+//                 line-height: 1;
+//                 display: inline-block;
+//                 color: $second-color;
+//                 margin-right: 50px;
 
-                @media (max-width: 1280px) {
-                    font-size: 100px;
-                }
+//                 @media (max-width: 1280px) {
+//                     font-size: 100px;
+//                 }
 
-                @media (max-width: 1200px) {
-                    font-size: 90px;
-                    display: block;
-                }
+//                 @media (max-width: 1200px) {
+//                     font-size: 90px;
+//                     display: block;
+//                 }
 
-                @media (max-width: 767px) {
-                    font-size: 80px;
-                    margin-right: 0;
-                }
+//                 @media (max-width: 767px) {
+//                     font-size: 80px;
+//                     margin-right: 0;
+//                 }
 
-                @media (max-width: 500px) {
-                    font-size: 70px;
-                    margin-right: 0;
-                }
+//                 @media (max-width: 500px) {
+//                     font-size: 70px;
+//                     margin-right: 0;
+//                 }
 
-                @media (max-width: 400px) {
-                    font-size: 60px;
-                    margin-right: 0;
-                }
+//                 @media (max-width: 400px) {
+//                     font-size: 60px;
+//                     margin-right: 0;
+//                 }
 
-                &:last-child {
-                    display: block;
-                    margin-left: 50px;
+//                 &:last-child {
+//                     display: block;
+//                     margin-left: 50px;
 
-                    @media (max-width: 1200px) {
-                        margin-left: 0;
-                    }
-                }
-            }
+//                     @media (max-width: 1200px) {
+//                         margin-left: 0;
+//                     }
+//                 }
+//             }
 
-            a {
-                transform: translateY(-50%);
+//             a {
+//                 transform: translateY(-50%);
 
-                @media (max-width: 1200px) {
-                    transform: translateY(0);
-                    margin: 15px 0px;
-                }
-            }
-        }
-    }
-}
+//                 @media (max-width: 1200px) {
+//                     transform: translateY(0);
+//                     margin: 15px 0px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-.hero-3 {
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
+// .hero-3 {
+//     overflow: hidden;
+//     position: relative;
+//     z-index: 0;
 
-    .single-slide {
-        padding: 150px 0px;
-        position: relative;
-        z-index: 2;
-        background-color: $theme-color-3;
+//     .single-slide {
+//         padding: 150px 0px;
+//         position: relative;
+//         z-index: 2;
+//         background-color: $theme-color-3;
 
-        @media (max-width: 1199px) {
-            padding: 120px 0px;
-        }
+//         @media (max-width: 1199px) {
+//             padding: 120px 0px;
+//         }
 
-        @media (max-width: 767px) {
-            padding: 100px 0px;
-        }
+//         @media (max-width: 767px) {
+//             padding: 100px 0px;
+//         }
 
-        &::before {
-            position: absolute;
-            width: 1100px;
-            height: 667px;
-            bottom: 0;
-            left: 0;
-            background-image: url("../../img//home3/hero-pattern.png");
-            background-repeat: x-repeat;
-            background-position: left bottom;
-            content: "";
-            z-index: -1;
-        }
+//         &::before {
+//             position: absolute;
+//             width: 1100px;
+//             height: 667px;
+//             bottom: 0;
+//             left: 0;
+//             background-image: url("../../img//home3/hero-pattern.png");
+//             background-repeat: x-repeat;
+//             background-position: left bottom;
+//             content: "";
+//             z-index: -1;
+//         }
 
-        &::after {
-            width: 68.5%;
-            height: 400%;
-            position: absolute;
-            content: "";
-            right: 0;
-            top: -30%;
-            background-color: #001248;
-            z-index: -1;
-            transform: rotate(30deg);
+//         &::after {
+//             width: 68.5%;
+//             height: 400%;
+//             position: absolute;
+//             content: "";
+//             right: 0;
+//             top: -30%;
+//             background-color: #001248;
+//             z-index: -1;
+//             transform: rotate(30deg);
 
-            @media (max-width: 1199px) {
-                display: none;
-            }
-        }
+//             @media (max-width: 1199px) {
+//                 display: none;
+//             }
+//         }
 
-        .hero-contents {
-            p {
-                color: $second-color;
-            }
+//         .hero-contents {
+//             p {
+//                 color: $second-color;
+//             }
 
-            h1 {
-                font-size: 90px;
-                line-height: 1.22;
-                display: inline-block;
-                color: $second-color;
-                font-weight: 700;
+//             h1 {
+//                 font-size: 90px;
+//                 line-height: 1.22;
+//                 display: inline-block;
+//                 color: $second-color;
+//                 font-weight: 700;
 
-                @media (max-width: 1199px) {
-                    font-size: 80px;
-                }
+//                 @media (max-width: 1199px) {
+//                     font-size: 80px;
+//                 }
 
-                @media (max-width: 575px) {
-                    font-size: 60px;
-                }
+//                 @media (max-width: 575px) {
+//                     font-size: 60px;
+//                 }
 
-                @media (max-width: 485px) {
-                    font-size: 50px;
-                }
-            }
+//                 @media (max-width: 485px) {
+//                     font-size: 50px;
+//                 }
+//             }
 
-            a {
-                margin-top: 30px;
+//             a {
+//                 margin-top: 30px;
 
-                @media (max-width: 575px) {
-                    margin-top: 20px;
-                }
+//                 @media (max-width: 575px) {
+//                     margin-top: 20px;
+//                 }
 
-                &.theme-3 {
-                    border-color: $second-color;
-                    background-color: $second-color;
-                    color: #fff;
+//                 &.theme-3 {
+//                     border-color: $second-color;
+//                     background-color: $second-color;
+//                     color: #fff;
 
-                    &:last-child {
-                        border-color: #fff;
-                        background-color: #fff;
-                        color: $second-color;
-                    }
-                }
-            }
-        }
+//                     &:last-child {
+//                         border-color: #fff;
+//                         background-color: #fff;
+//                         color: $second-color;
+//                     }
+//                 }
+//             }
+//         }
 
-        .hero-img {
-            -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-            height: 500px;
-            width: 130%;
-            margin-left: -100px;
-            position: relative;
-            z-index: 1;
-        }
-    }
-}
+//         .hero-img {
+//             -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+//             clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+//             height: 500px;
+//             width: 130%;
+//             margin-left: -100px;
+//             position: relative;
+//             z-index: 1;
+//         }
+//     }
+// }

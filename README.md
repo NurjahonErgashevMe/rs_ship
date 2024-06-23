@@ -4,7 +4,7 @@
 # RUN
 |     NODE VERSION           |START |BUILD|
 |----------------|-------------------------------|-----------------------------|
-|16.20.2            |yarn && yarn dev            | yarn build
+|16.20.2            |yarn && yarn start            | yarn build
 
 
 

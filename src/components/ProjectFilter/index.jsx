@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-unused-expressions */
 import React, { useEffect, useState } from 'react';
 import CategoryBtn from './CategoryBtn';
 import FilterItem from './FilterItem';
