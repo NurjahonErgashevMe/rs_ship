@@ -6,7 +6,6 @@ import {
     FaLinkedinIn,
     FaMapMarkerAlt,
     FaTwitter,
-    // eslint-disable-next-line prettier/prettier
     FaYoutube
 } from 'react-icons/fa';
 

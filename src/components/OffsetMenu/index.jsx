@@ -8,7 +8,6 @@ import {
     FaMap,
     FaPlus,
     FaTwitter,
-    // eslint-disable-next-line prettier/prettier
     FaYoutube
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
