@@ -1,34 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import servicesOneData from "../Services1/servicesOneData";
 
 function WidServices() {
-    return (
-        <div className="single-footer-wid">
-            <div className="wid-title">
-                <h4>Services</h4>
-            </div>
-            <ul>
-                <li>
-                    <Link to="/services">Energy and Utilities</Link>
-                </li>
-                <li>
-                    <Link to="/services">Communication Services</Link>
-                </li>
-                <li>
-                    <Link to="/services">Internet of Things</Link>
-                </li>
-                <li>
-                    <Link to="/services">Product Development</Link>
-                </li>
-                <li>
-                    <Link to="/services">Industrial Automation</Link>
-                </li>
-                <li>
-                    <Link to="/services">Artificial Intelligence</Link>
-                </li>
-            </ul>
-        </div>
-    );
+  return (
+    <div className="single-footer-wid">
+      <div className="wid-title">
+        <Link className="h4" to="/services">Services</Link>
+      </div>
+      <ul>
+        {servicesOneData.map((item) => (
+          <li key={item.id}>
+            <Link to={`/services/${item.id}`}>{item.heading}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default WidServices;

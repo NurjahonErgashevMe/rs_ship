@@ -8,12 +8,12 @@ function Analytics() {
                 <div className="row align-center">
                     <div className="col-xl-6 pr-xl-5 col-12">
                         <div className="block-contents">
-                            <span>Business Analytics</span>
+                            <span>Advantages of our service</span>
                             <h1>{analyticsData.heading}</h1>
                             <h4>{analyticsData.subHeading}</h4>
                             <p>{analyticsData.desc}</p>
                         </div>
-                        <div className="user-data mr-45 d-flex align-items-center">
+                        {/* <div className="user-data mr-45 d-flex align-items-center">
                             <div
                                 className="user-img bg-cover"
                                 style={{
@@ -28,7 +28,7 @@ function Analytics() {
                                 <a href="/">{analyticsData.userPhone}</a>
                                 <span>Make An Call</span>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-xl-6 col-12 mt-5 mt-xl-0">
                         <div className="chart-wrapper">

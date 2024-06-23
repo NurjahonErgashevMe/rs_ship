@@ -48,9 +48,24 @@ header {
     .logo {
       padding: 32px 0px;
 
+      img {
+        width: 200px;
+        height: 100px;
+      }
+
       @media (max-width: 991px) {
         padding: 20px 0px;
       }
+
+      @media (max-width:767px) {
+        img {
+
+          width: 130px;
+          height: 70px;
+        }
+      }
+
+
     }
 
     .menu-wrapper {
@@ -83,11 +98,12 @@ header {
     .main-menu {
       ul {
         line-height: 1;
-        > li {
+
+        >li {
           display: inline-block;
           line-height: 1;
 
-          > a {
+          >a {
             display: inline-block;
             font-weight: 700;
             font-size: 16px;
@@ -99,18 +115,18 @@ header {
           }
 
           &:hover {
-            > a {
+            >a {
               color: $theme-dark;
             }
 
-            > ul {
+            >ul {
               opacity: 1;
               visibility: visible;
               transform: translateY(0);
             }
           }
 
-          > ul {
+          >ul {
             position: absolute;
             top: 100%;
             width: 230px;
@@ -126,6 +142,7 @@ header {
 
             li {
               display: block;
+
               a {
                 display: block;
                 color: #000;
@@ -319,11 +336,12 @@ header {
 
       ul {
         line-height: 1;
-        > li {
+
+        >li {
           display: inline-block;
           line-height: 1;
 
-          > a {
+          >a {
             display: inline-block;
             font-weight: 700;
             font-size: 16px;
@@ -339,18 +357,18 @@ header {
           }
 
           &:hover {
-            > a {
+            >a {
               color: $theme-dark;
             }
 
-            > ul {
+            >ul {
               opacity: 1;
               visibility: visible;
               transform: translateY(0);
             }
           }
 
-          > ul {
+          >ul {
             position: absolute;
             top: 100%;
             width: 230px;
@@ -366,6 +384,7 @@ header {
 
             li {
               display: block;
+
               a {
                 display: block;
                 color: #000;
@@ -496,11 +515,12 @@ header {
     .main-menu {
       ul {
         line-height: 1;
-        > li {
+
+        >li {
           display: inline-block;
           line-height: 1;
 
-          > a {
+          >a {
             display: inline-block;
             font-weight: 700;
             font-size: 16px;
@@ -512,18 +532,18 @@ header {
           }
 
           &:hover {
-            > a {
+            >a {
               color: $theme-dark;
             }
 
-            > ul {
+            >ul {
               opacity: 1;
               visibility: visible;
               transform: translateY(0);
             }
           }
 
-          > ul {
+          >ul {
             position: absolute;
             top: 100%;
             width: 230px;
@@ -539,6 +559,7 @@ header {
 
             li {
               display: block;
+
               a {
                 display: block;
                 color: #fff;
@@ -741,7 +762,8 @@ header {
         }
       }
     }
-    li + li {
+
+    li+li {
       &::before {
         color: #c5c2c2;
         content: "|";
@@ -753,6 +775,7 @@ header {
 .action-bar {
   margin-top: 30px;
   padding-left: 20px;
+
   a {
     color: #fff;
     display: block;
@@ -803,6 +826,7 @@ header {
   }
 
   .offset-menu-section {
+
     h3,
     h4,
     h5 {
@@ -821,6 +845,7 @@ header {
         span {
           margin-right: 10px;
         }
+
         margin-bottom: 5px;
       }
     }
@@ -875,10 +900,12 @@ header {
   ul {
     padding: 30px;
   }
+
   .bottom-item {
     display: flex;
     align-items: center;
     color: $white;
+
     &:not(:last-child) {
       margin-bottom: 10px;
     }

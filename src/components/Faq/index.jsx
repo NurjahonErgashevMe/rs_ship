@@ -10,7 +10,7 @@ function Faq() {
                 <div className="row">
                     <div className="col-xl-6 col-12">
                         <div className="content-block">
-                            <p>Get Answers</p>
+                            <p>FAQ</p>
                             <h1>Get every single answers from here.</h1>
                             <div className="bg-img">
                                 <img src={bgImg} alt="" />

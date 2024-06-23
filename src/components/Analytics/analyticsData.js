@@ -2,10 +2,10 @@ import userImg from '../../assets/img/blog/author2.jpg';
 import chart from '../../assets/img/chart.png';
 
 const analyticsData = {
-    heading: 'Providing solutions of every kind.',
+    heading: 'Refine Ship',
     subHeading:
-        'Capitalise on low hanging fruit to identify a ballpark value added activity to beta test.',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        'You will see real professionalism. We will show you the peak of logistics',
+    desc: 'Refine Ship company is ready to quickly and carefully reload your goods',
     userName: 'Miranda H.',
     userPosition: 'Founder',
     userImg,

@@ -112,19 +112,20 @@
 }
 
 // ACCORDION STYLING
+
 .accordion {
   color: #777;
-  border: none;
+  border: none !important;
 
   &__item {
     box-shadow: $box-shadow-2;
-    background-color: #fff;
+    background-color: #fff ;
     margin-bottom: 2rem;
     border: none;
   }
 
   &__button {
-    background-color: #fff;
+    background-color: #fff !important;
     display: block;
     font-weight: 600;
     line-height: 50px;
