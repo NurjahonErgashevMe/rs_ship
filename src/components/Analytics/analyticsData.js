@@ -1,4 +1,4 @@
-import userImg from '../../assets/img/blog/author2.jpg';
+import userImg from '../../assets/img/author2.jpg';
 import chart from '../../assets/img/chart.png';
 
 const analyticsData = {

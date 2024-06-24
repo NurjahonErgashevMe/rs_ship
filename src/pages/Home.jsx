@@ -8,11 +8,33 @@ import Hero from "../components/Hero";
 // import Pricing from '../components/Pricing';
 import Promo from "../components/Promo";
 import Services1 from "../components/Services1";
+import { SuperSEO } from "react-super-seo";
 // import Subscribe from '../components/Subscribe';
 
 function Home() {
   return (
     <>
+      <SuperSEO
+        title="Home | React Super SEO"
+        description="React SEO component with OpenGraph and Twitter Cards support."
+        lang="en"
+        openGraph={{
+          ogImage: {
+            ogImage: "http://placekitten.com/1200/630",
+            ogImageAlt: "Kittens",
+            ogImageWidth: 1200,
+            ogImageHeight: 630,
+            ogImageType: "image/jpeg",
+          },
+        }}
+        twitter={{
+          twitterSummaryCard: {
+            summaryCardImage: "http://placekitten.com/1200/630",
+            summaryCardImageAlt: "Kittens",
+            summaryCardSiteUsername: "justinmahar",
+          },
+        }}
+      />
       <Hero />
       <Promo />
       <Services1 />

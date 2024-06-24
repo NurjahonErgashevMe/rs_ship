@@ -1,5 +1,5 @@
 import React from "react";
-import bannerBg from "../assets/img/page-banner.jpg";
+import bannerBg from "../assets/img/ship/ship2.jpg";
 import ContactForm from "../components/ContactForm";
 import ContactUs from "../components/ContactUs";
 import PageBanner from "../components/PageBanner";

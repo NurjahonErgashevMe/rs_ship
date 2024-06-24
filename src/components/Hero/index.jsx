@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
-import HeroBg1 from "../../assets/img/home1/hero1.jpg";
+import HeroBg1 from "../../assets/img/hero1.jpg";
 import HeroVideo1 from "../../assets/videos/heros/hero1_video.mp4";
 
 function Hero() {
