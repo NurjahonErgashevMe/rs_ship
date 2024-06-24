@@ -1,8 +1,8 @@
 import React from 'react';
-import bannerBg from '../assets/img/page-banner.jpg';
+import bannerBg from '../assets/img/ship/vehicle_transportation.jpg';
 import ContactForm from '../components/ContactForm';
 import FaqAccordion from '../components/FaqAccordion';
-import Footer1 from '../components/Footer1';
+import Footer from '../components/Footer3';
 import Header1 from '../components/Header1';
 import PageBanner from '../components/PageBanner';
 
@@ -50,7 +50,7 @@ function Faq() {
                 </div>
             </section>
             <ContactForm title="Get Quote" heading="Get More Answers" />
-            <Footer1 />
+            <Footer />
         </>
     );
 }
