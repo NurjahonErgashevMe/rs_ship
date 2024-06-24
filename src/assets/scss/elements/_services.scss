@@ -120,95 +120,6 @@
     }
 }
 
-.our-services-wrapper {
-    .grid-area {
-        position: relative;
-        z-index: 2;
-        height: 382px;
-
-        @media (min-width: 1550px) {
-            max-width: 1444px !important;
-        }
-
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-gap: 70px;
-        text-align: center;
-        margin: 0px auto;
-        padding: 60px;
-        box-shadow: $box-shadow;
-        background: #fff;
-        margin-top: -150px;
-
-        .single-service-box {
-            transition: all 0.5s ease-in-out;
-            z-index: 1;
-
-            .icon {
-                border-radius: 50%;
-                background-color: $theme-color-2;
-                box-shadow: 0px 16px 32px 0px rgba(255, 94, 20, 0.2);
-                width: 140px;
-                height: 140px;
-                line-height: 140px;
-                display: inline-block;
-                margin: 0 auto;
-                margin-bottom: 30px;
-                transition: all 0.5s ease-in-out;
-                position: relative;
-
-                &::before {
-                    border-style: solid;
-                    border-width: 4px;
-                    border-radius: 50%;
-                    width: 120%;
-                    height: 120%;
-                    border-color: $theme-color-2;
-                    position: absolute;
-                    content: "";
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: all 0.3s ease-in-out;
-                }
-            }
-
-            h3 {
-                font-size: 22px;
-                color: $second-color;
-            }
-
-            a {
-                opacity: 0;
-                visibility: hidden;
-                margin-top: 20px;
-                transition: all 0.5s ease-in-out;
-            }
-
-            &:hover {
-                transform: translateY(-35%);
-
-                a {
-                    opacity: 1;
-                    visibility: visible;
-                }
-
-                .icon {
-                    margin-bottom: 50px;
-
-                    &::before {
-                        opacity: 1;
-                        visibility: visible;
-                    }
-                }
-            }
-        }
-    }
-}
 
 .services-grid {
     display: grid;
@@ -317,50 +228,6 @@
     }
 }
 
-.appointment-notice-board {
-    .notice-board-banner {
-        width: 100%;
-        height: 260px;
-        background-color: #eee;
-        background-size: cover;
-        margin-bottom: 40px;
-    }
-
-    .appointment-list {
-        h2 {
-            color: #fff;
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-
-        .appointment-time {
-            margin-top: 20px;
-
-            span {
-                font-weight: 600;
-                color: #a1aac3;
-            }
-
-            a {
-                display: inline-block;
-                padding: 0px 25px;
-                font-size: 14px;
-                font-weight: 600;
-                line-height: 30px;
-                height: 30px;
-                background-color: $theme-color-3;
-                color: #001248;
-                -webkit-clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-                clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-
-                i {
-                    margin-right: 3px;
-                }
-            }
-        }
-    }
-}
-
 .process-setps {
     overflow: hidden;
 
@@ -427,27 +294,6 @@
     }
 }
 
-.service-gallery {
-    margin-bottom: 30px;
-
-    .single-service-photo {
-        width: 100%;
-        height: 450px;
-        background-color: #eee;
-
-        @media (max-width: 1199px) {
-            height: 400px;
-        }
-
-        @media (max-width: 991px) {
-            height: 300px;
-        }
-
-        @media (max-width: 767px) {
-            height: 250px;
-        }
-    }
-}
 
 .service-details-wrapper {
     h2 {
@@ -602,6 +448,7 @@
 .service-details-sidebar {
     position: sticky;
     top: 10px;
+
     .single-service-sidebar {
         margin-bottom: 40px;
 
@@ -695,6 +542,95 @@
                         font-size: 17px;
                     }
                 }
+            }
+        }
+    }
+}
+
+.single-service-card {
+    padding: 15px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0px 30px 60px 0px rgba(52, 52, 52, 0.04);
+    margin-top: 30px;
+
+    *{
+        transition: var(--default-transiton);
+    }
+
+    .card-thumb {
+        height: 200px;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &:hover{
+        .card-thumb img{
+            scale: 1.2;
+        }
+    }
+
+    .content {
+        padding: 30px 35px;
+        background-color: #f7f7f7;
+        position: relative;
+
+        @media (max-width: 600px) {
+            padding: 30px;
+        }
+
+        .case-cat {
+            position: absolute;
+            right: 0;
+            bottom: 100%;
+
+            a {
+                display: inline-block;
+                padding: 20px;
+                line-height: 1;
+                font-size: 24px;
+                background-color: $theme-color;
+                position: relative;
+
+                &:hover {
+                    color: #fff;
+                    background: $theme-color-2;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+            text-transform: capitalize;
+
+            &:hover {
+                a {
+                    color: $theme-color;
+                }
+            }
+        }
+
+        .read-btn {
+            font-size: 16px;
+            line-height: 1;
+            text-transform: capitalize;
+            margin-top: 20px;
+            display: block;
+
+            &:hover {
+                color: $theme-color-3;
+                padding-left: 5px;
+            }
+
+            i {
+                margin-left: 5px;
             }
         }
     }
