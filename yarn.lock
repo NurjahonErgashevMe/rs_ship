@@ -1864,6 +1864,11 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
+"@react-hooks-hub/use-click-outside@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@react-hooks-hub/use-click-outside/-/use-click-outside-0.0.2.tgz#015395676572f15689f831a1db6b98311c16bea8"
+  integrity sha512-4FZzqWA2eGhgkdWJqwp6JlvMHc2H131XW140/AAdLElM9O67A7IREYrmuXQrbIpBQmgUeSfbhao4WicN61IOVQ==
+
 "@remix-run/router@1.16.1":
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.16.1.tgz#73db3c48b975eeb06d0006481bde4f5f2d17d1cd"

@@ -2,53 +2,29 @@ import React, { createRef, useEffect, useState } from "react";
 import { createBrowserRouter, useLocation, useOutlet } from "react-router-dom";
 import { Suspense } from "react";
 
-import Home1 from "../../pages/Home1";
-import Home2 from "../../pages/Home2";
-import Home3 from "../../pages/Home3";
+import Home from "../../pages/Home";
 import About from "../../pages/About";
-import Team from "../../pages/Team";
 import Faq from "../../pages/Faq";
-import Projects from "../../pages/Projects";
 import Services from "../../pages/Services";
 import ServicesDetails from "../../pages/ServicesDetails";
-import ProjectDetails from "../../pages/ProjectDetails";
-import News from "../../pages/News";
-import NewsDetails from "../../pages/NewsDetails";
 import Contact from "../../pages/Contact";
 
 import TopBarProgress from "react-topbar-progress-indicator";
 
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+
 const routes = [
-  {
-    path: "home-2",
-    element: <Home2 />,
-    nodeRef: createRef(),
-  },
-  {
-    path: "home-3",
-    element: <Home3 />,
-    nodeRef: createRef(),
-  },
   {
     path: "about",
     element: <About />,
     nodeRef: createRef(),
   },
   {
-    path: "team",
-    element: <Team />,
-    nodeRef: createRef(),
-  },
-  {
     path: "faq",
     element: <Faq />,
-    nodeRef: createRef(),
-  },
-  {
-    path: "projects",
-    element: <Projects />,
     nodeRef: createRef(),
   },
   {
@@ -62,28 +38,13 @@ const routes = [
     nodeRef: createRef(),
   },
   {
-    path: "project-details",
-    element: <ProjectDetails />,
-    nodeRef: createRef(),
-  },
-  {
-    path: "news",
-    element: <News />,
-    nodeRef: createRef(),
-  },
-  {
-    path: "news-details",
-    element: <NewsDetails />,
-    nodeRef: createRef(),
-  },
-  {
     path: "contact",
     element: <Contact />,
     nodeRef: createRef(),
   },
   {
     path: "",
-    element: <Home1 />,
+    element: <Home />,
     index: true,
     nodeRef: createRef(),
   },
@@ -153,7 +114,9 @@ function Layout() {
         >
           {() => (
             <div ref={nodeRef} className="page">
+              <Header />
               {currentOutlet}
+              <Footer />
             </div>
           )}
         </CSSTransition>

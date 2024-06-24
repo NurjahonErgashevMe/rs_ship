@@ -6,7 +6,7 @@ import "swiper/swiper-bundle.min.css";
 import timeLineData from "./timeLineData";
 import TimelineItem from "./TimelineItem";
 
-export default function App() {
+export default function TimeLine() {
   return (
     <section className="timeline-wrapper section-padding">
       <div className="container">

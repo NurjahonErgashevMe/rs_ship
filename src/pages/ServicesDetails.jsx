@@ -1,8 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import Footer from "../components/Footer3";
-import Header from "../components/Header1";
 import PageBanner from "../components/PageBanner";
 import ServiceDetails from "../components/ServiceDetails";
 import ServiceSidebar from "../components/ServiceSidebar";
@@ -20,7 +18,6 @@ function ServicesDetails() {
 
   return (
     <>
-      <Header />
       <PageBanner
         bannerBg={currentService.bgImg}
         heading={currentService?.heading}
@@ -43,7 +40,6 @@ function ServicesDetails() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

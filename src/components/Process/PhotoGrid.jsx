@@ -1,5 +1,5 @@
 import React from "react";
-
+    
 function PhotoGrid({ img1, img2, img3 }) {
   return (
     <div className="col-xl-5 col-12">
