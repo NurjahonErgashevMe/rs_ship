@@ -1,10 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function PageBannerVideo({ poster, currentPage, heading, videoSrc }) {
   return (
-    <section
-      className="page-banner-wrap  bg-cover"
-    >
+    <section className="page-banner-wrap  bg-cover">
       <video
         poster={poster}
         src={videoSrc}
@@ -22,7 +21,7 @@ function PageBannerVideo({ poster, currentPage, heading, videoSrc }) {
               <nav>
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index.html">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     {currentPage}

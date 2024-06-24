@@ -2,7 +2,7 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-function ServicesOneCard({ bgImg, icon, heading, btnText, description }) {
+function ServicesOneCard({ bgImg, icon, heading, btnText, description, id }) {
   return (
     <div className="col-md-6 col-xl-4 col-12">
       <div className="single-service-item service-1">
@@ -18,7 +18,7 @@ function ServicesOneCard({ bgImg, icon, heading, btnText, description }) {
         <h3>{heading}</h3>
         <p>{description}</p>
         <div className="link">
-          <Link to="/services-details">
+          <Link to={`service/${id}`}>
             <span>{btnText}</span>
             <BsArrowRight style={{ fontSize: "18px" }} />
           </Link>

@@ -60,7 +60,7 @@ function Footer() {
       <div className="footer-bottom">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-6 col-12 order-2 order-md-1">
+            {/* <div className="col-md-6 col-12 order-2 order-md-1">
               <div className="copyright-info mt-3 mt-md-0">
                 <p>
                   Designed and developed by{" "}
@@ -70,7 +70,7 @@ function Footer() {
                   - 2024
                 </p>
               </div>
-            </div>
+            </div> */}
             <div className="col-md-6 col-12 text-center order-1 order-md-2">
               This site and all content is copyright &copy; {currentYear} Refine Ship,
               Inc.
