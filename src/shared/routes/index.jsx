@@ -15,6 +15,7 @@ import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import ScrollToTopRoute from "../../components/ScollToTopRoute";
 
 const routes = [
   {
@@ -114,6 +115,7 @@ function Layout() {
         >
           {() => (
             <div ref={nodeRef} className="page">
+              <ScrollToTopRoute />
               <Header />
               {currentOutlet}
               <Footer />
