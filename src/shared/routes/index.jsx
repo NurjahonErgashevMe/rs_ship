@@ -57,7 +57,7 @@ const routes = [
     nodeRef: createRef(),
   },
   {
-    path: "services-details",
+    path: "service/:id",
     element: <ServicesDetails />,
     nodeRef: createRef(),
   },

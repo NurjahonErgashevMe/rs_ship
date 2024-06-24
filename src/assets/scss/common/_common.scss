@@ -189,7 +189,7 @@
 .service-details-wrapper {
   .accordion {
     &__button {
-      background-color: #ffc54f;
+      background-color: #ffc54f !important;
 
       &::before {
         color: white;

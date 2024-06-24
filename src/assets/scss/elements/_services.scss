@@ -367,7 +367,7 @@
     .single-process-item {
         overflow: hidden;
         padding-right: 80px;
-        margin-top: 40px;
+        margin-top: 20px;
         display: flex;
         align-items: center;
 
@@ -600,6 +600,8 @@
 }
 
 .service-details-sidebar {
+    position: sticky;
+    top: 10px;
     .single-service-sidebar {
         margin-bottom: 40px;
 

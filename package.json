@@ -12,6 +12,7 @@
     "bootstrap": "4.6.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "next-seo": "^6.5.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.1",
     "react-accessible-accordion": "^3.0.1",
