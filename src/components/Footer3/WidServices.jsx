@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import servicesOneData from "../Services1/servicesOneData";
+import { servicesData } from "../../constants/services";
 
 function WidServices() {
   return (
@@ -9,7 +9,7 @@ function WidServices() {
         <Link className="h4" to="/services">Services</Link>
       </div>
       <ul>
-        {servicesOneData.map((item) => (
+        {servicesData.map((item) => (
           <li key={item.id}>
             <Link to={`/services/${item.id}`}>{item.heading}</Link>
           </li>

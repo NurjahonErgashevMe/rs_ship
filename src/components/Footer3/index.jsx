@@ -33,7 +33,7 @@ function Footer3() {
                     icon={iconCall}
                     title="Phone"
                     text={PHONE_NUMBER}
-                    href={`phone:${PHONE_NUMBER}`}
+                    href={`tel:${PHONE_NUMBER}`}
                   />
                   <WidQuestions
                     icon={iconMap}

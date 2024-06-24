@@ -1,6 +1,6 @@
 import React from "react";
 import ServicesOneCard from "./ServicesOneCard";
-import servicesOneData from "./servicesOneData";
+import { servicesData } from "../../constants/services";
 
 function Services1() {
   return (
@@ -16,7 +16,7 @@ function Services1() {
           </div>
         </div>
         <div className="row">
-          {servicesOneData.map((item) => (
+          {servicesData.map((item) => (
             <ServicesOneCard key={item.id} {...item} />
           ))}
         </div>

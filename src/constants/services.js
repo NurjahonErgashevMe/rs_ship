@@ -1,14 +1,14 @@
 import { v4 as uuidv4 } from 'uuid';
-import Bg1 from '../../assets/img/ship/sea_transportation.jpg';
-import Bg2 from '../../assets/img/ship/vehicle_transportation.jpg';
-import Bg3 from '../../assets/img/ship/ship2.jpg';
+import Bg1 from '../assets/img/ship/sea_transportation.jpg';
+import Bg2 from '../assets/img/ship/vehicle_transportation.jpg';
+import Bg3 from '../assets/img/ship/ship2.jpg';
 
-import Icon1 from '../../assets/img/icon/s1.png';
-import Icon2 from '../../assets/img/icon/s2.png';
-import Icon3 from '../../assets/img/icon/s3.png';
-// import Icon4 from '../../assets/img/icon/s4.png';
+import Icon1 from '../assets/img/icon/s1.png';
+import Icon2 from '../assets/img/icon/s2.png';
+import Icon3 from '../assets/img/icon/s3.png';
+// import Icon4 from '../assets/img/icon/s4.png';
 
-const servicesOneData = [
+export const servicesData = [
     {
         id: uuidv4(),
         bgImg: Bg1,
@@ -36,5 +36,3 @@ const servicesOneData = [
         btnText: 'Learn More',
     },
 ];
-
-export default servicesOneData;

@@ -37,7 +37,7 @@ function Header1() {
             <div className="col-12 d-none d-md-block col-lg-9">
               <div className="header-contact-info text-lg-right">
                 <div className="single-element">
-                  <a href={`phone:${PHONE_NUMBER}`} target="_blank">{PHONE_NUMBER}</a>
+                  <a href={`tel:${PHONE_NUMBER}`} target="_blank">{PHONE_NUMBER}</a>
                   <span>Call Us Now</span>
                 </div>
                 <div className="single-element">

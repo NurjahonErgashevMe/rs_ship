@@ -1,7 +1,7 @@
 import React from 'react';
-import contactData from './contactData';
 import ContactItem from './ContactItem';
 import Map from './Map';
+import contactData from '../../constants/contact';
 
 function ContactUs() {
     return (
@@ -15,7 +15,8 @@ function ContactUs() {
                             text={data.text}
                             icon={data.icon}
                             item1={data.item1}
-                            item2={data.item2}
+                            // item2={data.item2}
+                            link={data.link}
                         />
                     ))}
                 </div>
