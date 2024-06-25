@@ -3,10 +3,12 @@ import bannerBg from "../assets/img/ship/vehicle_transportation.jpg";
 import ContactForm from "../components/ContactForm";
 import FaqAccordion from "../components/FaqAccordion";
 import PageBanner from "../components/PageBanner";
+import SEO from "../components/SEO";
 
 function Faq() {
   return (
     <>
+      <SEO title="FAQ" />
       <PageBanner bannerBg={bannerBg} heading="Get Answers" currentPage="Faq" />
       <section className="faq-section section-padding">
         <div className="container">

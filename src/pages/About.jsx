@@ -8,9 +8,12 @@ import PageBannerVideo from "../components/PageBannerVideo";
 import TeamImage from "../assets/img/team_banner.jpeg";
 import TeamVideo from "../assets/videos/banner/team.mp4";
 
+import SEO from "../components/SEO";
+
 function About() {
   return (
     <>
+      <SEO title="About" />
       <PageBannerVideo
         poster={TeamImage}
         videoSrc={TeamVideo}

@@ -6,6 +6,7 @@ import ServiceDetails from "../components/ServiceDetails";
 import ServiceSidebar from "../components/ServiceSidebar";
 
 import { servicesData } from "../constants/services";
+import SEO from "../components/SEO";
 
 function ServicesDetails() {
   const { id } = useParams();
@@ -18,6 +19,7 @@ function ServicesDetails() {
 
   return (
     <>
+      <SEO title={currentService.heading} />
       <PageBanner
         bannerBg={currentService.bgImg}
         heading={currentService?.heading}
