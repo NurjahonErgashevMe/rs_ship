@@ -8,6 +8,7 @@ import Faq from "../../pages/Faq";
 import Services from "../../pages/Services";
 import ServicesDetails from "../../pages/ServicesDetails";
 import Contact from "../../pages/Contact";
+import NotFound from "../../pages/NotFound";
 
 import TopBarProgress from "react-topbar-progress-indicator";
 
@@ -49,6 +50,12 @@ const routes = [
     index: true,
     nodeRef: createRef(),
   },
+  {
+    path: "*",
+    loader: () => <h2>LOADING...</h2>,
+    element: <NotFound />,
+    nodeRef: createRef(),
+  },
 ];
 
 export const router = createBrowserRouter(
@@ -62,11 +69,6 @@ export const router = createBrowserRouter(
         </Suspense>
       ),
       children: routes,
-    },
-    {
-      path: "*",
-      loader: () => <h2>LOADING...</h2>,
-      element: <h1>error</h1>,
     },
   ],
   {
