@@ -1,0 +1,153 @@
+@import "src/assets/scss/default/variables";
+
+.local {
+  width: 100%;
+  min-width: 100px;
+
+  margin: 0 auto;
+  padding: 28px 0;
+  background: #fff;
+  border: 1px solid #eeeff3;
+  box-shadow: 0 6px 15px rgba(9, 21, 54, .1);
+  border-radius: 10px;
+
+  &__wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .step {
+    width: 100%;
+    row-gap: 12px;
+    column-gap: 30px;
+    min-width: 100%;
+    margin: 0;
+
+    textarea {
+      resize: none !important;
+      min-height: 165px;
+    }
+  }
+
+
+  .step__vehicle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+    &>div {
+      min-width: 150px !important;
+    }
+  }
+
+
+
+  .wrap {
+    width: 100%;
+    min-width: 200px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .resultCard {
+    padding: 0;
+    min-width: 300px;
+
+    ul {
+      border-radius: 2px;
+      overflow: hidden;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid rgba(95, 158, 160, 0.485);
+        padding: 4px 10px;
+
+        span {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    background-color: white;
+    padding: 20px;
+    border-radius: 1px;
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    .form {
+      &>div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+
+    .div1 {
+      min-width: 48%;
+
+      h1 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width:$sm) {
+  .wrap {
+    flex-direction: column;
+    gap: 10px !important;
+  }
+}
+
+// @media (max-width: $lg) {
+//   .local {
+//     min-height: 500px;
+//     height: fit-content;
+
+//     .step {
+//       flex-direction: column;
+//       width: fit-content;
+//       min-width: 150px !important;
+//       margin: 0px;
+//     }
+
+//     .step__1 {
+//       &>div {
+//         min-width: 150px;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: $sm) {
+//   .local {
+//     h1 {
+//       font-size: 22px;
+//     }
+
+//     .resultCard {
+//       min-width: 200px;
+//       padding: 0px 0 20px;
+//     }
+
+//     .step__4 {
+//       &>div {
+//         div {
+//           min-width: none;
+//           width: 100%;
+//         }
+//       }
+//     }
+
+//     .wrap {
+//       justify-content: center;
+//     }
+//   }
+// }

@@ -1,0 +1,28 @@
+.form {
+  padding: 10px;
+  border-radius: 6px;
+  min-width: 100%;
+  z-index: 10;
+  background-color: white;
+  .form__item {
+    width: 100%;
+  }
+
+  .form__button {
+    width: 100%;
+  }
+  .privacy_police {
+    padding: 10px 0;
+    &__checkbox {
+      &__text {
+        color: var(--dark);
+        font-size: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .form__button {
+    font-size: 13px !important;
+  }
+}

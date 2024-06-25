@@ -1,20 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 // import SimpleReactLightbox from "simple-react-lightbox";
-// import App from "./App";
+import App from "./App";
 import "./index.scss";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 // import reportWebVitals from "./reportWebVitals";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./shared/routes";
+
+const queryClient = new QueryClient();
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <BrowserRouter> */}
-    {/* <SimpleReactLightbox> */}
-    <RouterProvider router={router} />
-    {/* <App /> */}
-    {/* </SimpleReactLightbox> */}
-    {/* </BrowserRouter> */}
+    <QueryClientProvider client={queryClient}>
+      <App />
+    </QueryClientProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

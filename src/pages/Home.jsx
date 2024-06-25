@@ -9,7 +9,6 @@ import Hero from "../components/Hero";
 import Promo from "../components/Promo";
 import Services1 from "../components/Services1";
 import { SuperSEO } from "react-super-seo";
-import HeroForm from "../components/HeroForm";
 // import Subscribe from '../components/Subscribe';
 
 function Home() {
@@ -37,7 +36,6 @@ function Home() {
         }}
       />
       <Hero />
-      <HeroForm />
       <Promo />
       <Services1 />
       <Cta />

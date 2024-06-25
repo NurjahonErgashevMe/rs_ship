@@ -1,36 +1,40 @@
-import React from 'react';
-import ContactItem from './ContactItem';
-import Map from './Map';
-import contactData from '../../constants/contact';
+import React from "react";
+import ContactItem from "./ContactItem";
+import Map from "./Map";
+import contactData from "../../constants/contact";
+import { LocalForm } from "../StepsForm";
 
 function ContactUs() {
-    return (
-        <section className="contact-page-wrap section-padding">
-            <div className="container">
-                <div className="row">
-                    {contactData.map((data) => (
-                        <ContactItem
-                            key={data.id}
-                            heading={data.heading}
-                            text={data.text}
-                            icon={data.icon}
-                            item1={data.item1}
-                            // item2={data.item2}
-                            link={data.link}
-                        />
-                    ))}
-                </div>
+  return (
+    <section className="contact-page-wrap section-padding">
+      <div className="container">
+        <div className="mb-100">
+          <LocalForm />
+        </div>
+        <div className="row">
+          {contactData.map((data) => (
+            <ContactItem
+              key={data.id}
+              heading={data.heading}
+              text={data.text}
+              icon={data.icon}
+              item1={data.item1}
+              // item2={data.item2}
+              link={data.link}
+            />
+          ))}
+        </div>
 
-                <div className="row">
-                    <div className="col-12 col-lg-12">
-                        <div className="contact-map-wrap">
-                            <Map />
-                        </div>
-                    </div>
-                </div>
+        <div className="row">
+          <div className="col-12 col-lg-12">
+            <div className="contact-map-wrap">
+              <Map />
             </div>
-        </section>
-    );
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default ContactUs;

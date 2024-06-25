@@ -1,6 +1,6 @@
 import React from "react";
 import bannerBg from "../assets/img/ship/ship2.jpg";
-import ContactForm from "../components/ContactForm";
+// import ContactForm from "../components/ContactForm";
 import ContactUs from "../components/ContactUs";
 import PageBanner from "../components/PageBanner";
 
@@ -13,7 +13,7 @@ function Contact() {
         currentPage="Contact"
       />
       <ContactUs />
-      <ContactForm title="Write Message" heading="Get In Touch" />
+      {/* <ContactForm title="Write Message" heading="Get In Touch" /> */}
     </>
   );
 }
