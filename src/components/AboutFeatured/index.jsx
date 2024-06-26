@@ -73,7 +73,7 @@ function AboutFeatured() {
                   organizers who trust our service to move their vehicles.
                 </h4>
                 <p>
-                  Refine Ship focuses on providing reliable transportation
+                  RS Logistics focuses on providing reliable transportation
                   services to any type of vehicle, cars, motorcycles, RVs,
                   trailers to any states inside the USA and other foreign
                   countries as well.

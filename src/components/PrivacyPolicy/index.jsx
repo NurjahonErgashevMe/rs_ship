@@ -15,7 +15,7 @@ function PrivacyPolicy() {
           ))}
         </div>
       ))}
-      <p className="mt-20">Refine Ship {ADDRESS}</p>
+      <p className="mt-20">RS Logistics  {ADDRESS}</p>
       <a href="https://refineship.com/" className="color-theme mt-20 d-block">
         https://refineship.com
       </a>

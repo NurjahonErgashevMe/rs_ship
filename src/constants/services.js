@@ -108,7 +108,7 @@ export const servicesData = [
     icon: Icon2,
     heading: "Vehicle transport",
     description:
-      "Refine Ship transports all type of vehicles inside the USA and overseas , including heavy trucks, sedan, SUVs , regular trucks. Each cargo is similarly significant and valued with your preference of timing.",
+      "RS Logistics  transports all type of vehicles inside the USA and overseas , including heavy trucks, sedan, SUVs , regular trucks. Each cargo is similarly significant and valued with your preference of timing.",
     btnText: "Learn More",
     details: {
       images: [
@@ -192,7 +192,7 @@ export const servicesData = [
     icon: Icon3,
     heading: "Nationwide hauiling",
     description:
-      "Refine Ship offers trustworthy road car transport services in teamwork with our strong companion driver’s network in the USA. Our scheduled groupage pick up and drop off distribution network is widespread. All transports are accomplished according to contracts made with our customers.",
+      "RS Logistics  offers trustworthy road car transport services in teamwork with our strong companion driver’s network in the USA. Our scheduled groupage pick up and drop off distribution network is widespread. All transports are accomplished according to contracts made with our customers.",
     btnText: "Learn More",
     details: {
       images: [NationwideHauilingImage1, NationwideHauilingImage2],
