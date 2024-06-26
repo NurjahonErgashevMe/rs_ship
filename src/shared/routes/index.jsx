@@ -18,8 +18,14 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ScrollToTopRoute from "../../components/ScollToTopRoute";
 import TermsPage from "../../pages/Terms";
+import PrivacyPolicyPage from "../../pages/PrivacyPolicy";
 
 const routes = [
+  {
+    path: "privacy",
+    element: <PrivacyPolicyPage />,
+    nodeRef: createRef(),
+  },
   {
     path: "terms",
     element: <TermsPage />,

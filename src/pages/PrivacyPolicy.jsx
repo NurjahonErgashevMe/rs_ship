@@ -2,20 +2,20 @@ import React from "react";
 import bannerBg from "../assets/img/ship/vehicle_transportation.jpg";
 import PageBanner from "../components/PageBanner";
 import SEO from "../components/SEO";
-import Terms from "../components/Terms";
+import PrivacyPolicy from "../components/PrivacyPolicy";
 
-function TermsPage() {
+function PrivacyPolicyPage() {
   return (
     <>
-      <SEO title="Terms and conditions" />
+      <SEO title="Privacy & Policy" />
       <PageBanner
         bannerBg={bannerBg}
-        currentPage="terms and conditions"
-        heading="Terms & Donditions"
+        currentPage="Privacy and policy"
+        heading="Privacy & Policy"
       />
-      <Terms />
+      <PrivacyPolicy />
     </>
   );
 }
 
-export default TermsPage;
+export default PrivacyPolicyPage;

@@ -9,6 +9,7 @@ import WidExplore from "./WidExplore";
 import WidQuestions from "./WidQuestions";
 import WidServices from "./WidServices";
 import { ADDRESS, ADDRESS_LINK, EMAIL, PHONE_NUMBER } from "../../constants";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -60,6 +61,17 @@ function Footer() {
       <div className="footer-bottom">
         <div className="container">
           <div className="row align-items-center">
+            <div className="col-md-6 col-12 text-center order-1 order-md-2">
+              This site and all content is copyright &copy; {currentYear} Refine
+              Ship, Inc.
+            </div>
+            <div className="col-md-6 col-12 order-2 order-md-1">
+              <div className="copyright-info mt-3 mt-md-0">
+                <Link to="/privacy">Privacy & Policy</Link>
+                {" | "}
+                <Link to="/terms">Terms & Conditions</Link>{" "}
+              </div>
+            </div>
             {/* <div className="col-md-6 col-12 order-2 order-md-1">
               <div className="copyright-info mt-3 mt-md-0">
                 <p>
@@ -71,10 +83,6 @@ function Footer() {
                 </p>
               </div>
             </div> */}
-            <div className="col-md-6 col-12 text-center order-1 order-md-2">
-              This site and all content is copyright &copy; {currentYear} Refine Ship,
-              Inc.
-            </div>
             {/* <div className="col-md-4 col-12 text-md-end order-3 order-md-3">
               <div className="social_link  mt-3 mt-md-0">
                 <Link to="/home-3">
