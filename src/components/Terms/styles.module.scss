@@ -1,0 +1,12 @@
+@import "src/assets/scss/default/variables";
+
+.condition{
+    margin: 10px 0;
+    font-size: 18px;
+    display: flex;
+    gap: 3px;
+    span{
+        color: $theme-color;
+        font-weight: 500;
+    }
+}

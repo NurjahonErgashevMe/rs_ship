@@ -17,8 +17,14 @@ import { CSSTransition, SwitchTransition } from "react-transition-group";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ScrollToTopRoute from "../../components/ScollToTopRoute";
+import TermsPage from "../../pages/Terms";
 
 const routes = [
+  {
+    path: "terms",
+    element: <TermsPage />,
+    nodeRef: createRef(),
+  },
   {
     path: "about",
     element: <About />,
