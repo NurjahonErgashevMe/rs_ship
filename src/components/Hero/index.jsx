@@ -24,7 +24,7 @@ function Hero() {
             <div className="row wrapper mx-auto">
               <div className="col-12 col-lg-7 col-xl-6 m-0 px-0 ">
                 <div className="hero-contents">
-                  <h1>YOU CHOOSE WHERE TO SHIP AND WHEN TO SHIP.</h1>
+                  <h1>Refine ship</h1>
                   <div className="links">
                     <Link to="/services" className="theme-btn">
                       Our Services{" "}

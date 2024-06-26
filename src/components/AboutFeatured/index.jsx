@@ -65,13 +65,30 @@ function AboutFeatured() {
             <div className="col-xl-6 col-lg-7 col-12 mt-5 mt-lg-0">
               <div className="block-contents">
                 <span>About us</span>
-                <h1 className="h1">INSIGHTS: PROFESSIONS. COLLEAGUE</h1>
+                <h1 className="h1">
+                  Focuses. Goal. Experienced logistics team
+                </h1>
                 <h4>
-                  That is us - a strong team! Who are the people behind GLS and
-                  what characterises them? What has happened and what can the
-                  employees report? News, events and stories - Insight into
-                  everyday company life. Take a look behind the scenes.
+                  Join the thousands of customer. dealers, auctions, and event
+                  organizers who trust our service to move their vehicles.
                 </h4>
+                <p>
+                  EZ Auto Ship LLC focuses on providing reliable transportation
+                  services to any type of vehicle, cars, motorcycles, RVs,
+                  trailers to any states inside the USA and other foreign
+                  countries as well.
+                </p>
+                <p>
+                  Our main goal is to provide quality service for our customers
+                  with good customer service. We take care of the most cost
+                  effective service as possible.
+                </p>
+                <p>
+                  Our experienced logistics team are the ones who make the
+                  difference. Each customer has a dedicated agent to handle
+                  their vehicles. They understand your needs, and strive to
+                  exceed your expectations.
+                </p>
               </div>
 
               {/* <div className="icon-boxs ml-lg-5">
