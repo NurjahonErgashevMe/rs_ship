@@ -13,10 +13,10 @@ import {
   StepFormItemTwo,
 } from "../StepForm";
 import { useFormDataStore } from "../../../shared/store/formData";
-// import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
+import clsx from "clsx";
 
-const waitTime = (time = 100) => {
+export const waitTime = (time = 100) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(true);
@@ -24,17 +24,12 @@ const waitTime = (time = 100) => {
   });
 };
 
-export default function LocalForm() {
+export default function LocalForm({ withoutStepper, classNames }) {
   const formRef = useRef(null);
-  const { formData, setFormData } = useFormDataStore();
-
+  const { formData, setFormData, current, setCurrent } = useFormDataStore();
   const navigate = useNavigate();
-
   const [loading, setLoading] = useState(false);
-
   const [modal, contextHolder] = Modal.useModal();
-
-  const [current, setCurrent] = useState(0);
 
   const countDown = () => {
     let secondsToGo = 5;
@@ -82,6 +77,7 @@ export default function LocalForm() {
           () => {
             countDown();
             setLoading(false);
+            setCurrent(0);
           },
           () => {
             message.error("Error");
@@ -94,19 +90,24 @@ export default function LocalForm() {
   async function Submit(data, isCurrent = true) {
     await formRef.current?.validateFields();
     setFormData({ ...formData, ...data });
-
-    isCurrent && setCurrent((prev) => prev + 1);
-
+    if (withoutStepper) {
+      navigate("/contact");
+    }
+    isCurrent && setCurrent(current + 1);
     await waitTime(1000);
   }
 
   return (
-    <ProCard className={classes.local} bodyStyle={{ padding: 0 }}>
+    <ProCard
+      className={clsx(classes.local, classNames?.container)}
+      bodyStyle={{ padding: 0 }}
+    >
       {contextHolder}
-      <div className={classes.local__wrapper}>
+      <div className={clsx(classes.local__wrapper, classNames?.wrapper)}>
         <StepsForm
-          current={current}
+          current={withoutStepper ? 0 : current}
           formRef={formRef}
+          stepsRender={withoutStepper ? () => <></> : null}
           onFinish={async (value) => {
             sendEmail(value);
             formRef.current?.validateFields();
@@ -114,27 +115,28 @@ export default function LocalForm() {
           }}
           submitter={{
             render: (e) => {
-              return (
+              return !withoutStepper ? (
                 <StepButtons
                   current={current}
                   formElement={e}
                   set={setCurrent}
                   loading={loading}
                 />
-              );
+              ) : null;
             },
           }}
           containerStyle={{ margin: 0, width: "100%", minWidth: 0 }}
         >
           <StepFormItemOne
             type="local"
-            className={classes.step}
-            wrapClass={classes.wrap}
+            customNextButton={withoutStepper}
+            className={clsx(classes.step, classNames?.stepOne)}
             onFinish={async () =>
               await Submit({
                 information: formRef.current?.getFieldsValue(),
               })
             }
+            column={withoutStepper}
           />
           <StepFormItemTwo
             className={classes.step}

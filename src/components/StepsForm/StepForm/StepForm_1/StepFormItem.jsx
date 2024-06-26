@@ -6,6 +6,8 @@ import classes from "./StepFormItem.module.scss";
 import { useFormDataStore } from "../../../../shared/store/formData";
 
 import useDebounce from "../../../../hooks/useDebounce";
+import clsx from "clsx";
+import { StepButtons } from "../../StepsButtons";
 
 const fetchCountries = async (searchFromValue) => {
   const response = await fetch(
@@ -25,7 +27,12 @@ const fetchPlaces = async (searchToValue) => {
   return response.json();
 };
 
-export default function StepFormItemOne({ ...props }) {
+export default function StepFormItemOne({
+  wrappClass,
+  customNextButton,
+  column,
+  ...props
+}) {
   const { formData, isChecked, setIsChecked } = useFormDataStore();
   const [searchValue, setSearchValue] = useState({
     to: "a",
@@ -34,22 +41,16 @@ export default function StepFormItemOne({ ...props }) {
   const searchFromValue = useDebounce(searchValue.from, 500);
   const searchToValue = useDebounce(searchValue.to, 500);
 
-  const {
-    data: countryData,
-    isLoading: isLoadingCountries,
-    // refetch: fromRefetch,
-  } = useQuery({
+  const { data: countryData, isLoading: isLoadingCountries } = useQuery({
     queryKey: ["countries", searchFromValue],
     queryFn: () => fetchCountries(searchFromValue),
     keepPreviousData: true,
-    // enabled: !!searchFromValue,
   });
 
   const { data: placeData, isLoading: isLoadingPlaces } = useQuery({
     queryKey: ["places", searchToValue],
     queryFn: () => fetchPlaces(searchToValue),
     keepPreviousData: true,
-    // enabled: !!searchToValue,
   });
 
   const countriesOptions =
@@ -66,17 +67,20 @@ export default function StepFormItemOne({ ...props }) {
       key: i.zip,
     })) || [];
 
-
   return (
     <StepsForm.StepForm
       name="base"
       title="Information"
       {...props}
-      style={{ width: "100%" }}
+      className="w-100"
     >
       <Space
-        className={classes.form__wrapper}
-        classNames={{ item: classes.form__item }}
+        className={clsx(classes.form__wrapper, wrappClass, {
+          [classes.column]: column,
+        })}
+        classNames={{
+          item: classes.form__item,
+        }}
       >
         <Form.Item
           label="Transport FROM"
@@ -162,6 +166,7 @@ export default function StepFormItemOne({ ...props }) {
         <Checkbox
           onChange={() => setIsChecked(!isChecked)}
           className={classes.privacy_police__checkbox}
+          defaultChecked={isChecked}
         >
           <p className={classes.privacy_police__checkbox__text}>
             By checking this box, you agree to receive text messages from Refine
@@ -169,6 +174,7 @@ export default function StepFormItemOne({ ...props }) {
           </p>
         </Checkbox>
       </Space>
+      {customNextButton ? <StepButtons current={0} /> : null}
     </StepsForm.StepForm>
   );
 }

@@ -3,6 +3,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import HeroBg1 from "../../assets/img/hero1.jpg";
 import HeroVideo1 from "../../assets/videos/heros/hero1_video.mp4";
+import HeroForm from "../HeroForm";
 
 function Hero() {
   return (
@@ -20,10 +21,10 @@ function Hero() {
             className="hero-image"
           />
           <div className="container">
-            <div className="row text-wrapper">
-              <div className="col-12 col-lg-8 col-xl-6">
+            <div className="row wrapper mx-auto">
+              <div className="col-12 col-lg-7 col-xl-6 m-0 px-0 ">
                 <div className="hero-contents">
-                  <h1>Global Automotive</h1>
+                  <h1>YOU CHOOSE WHERE TO SHIP AND WHEN TO SHIP.</h1>
                   <div className="links">
                     <Link to="/services" className="theme-btn">
                       Our Services{" "}
@@ -34,6 +35,9 @@ function Hero() {
                     </Link>
                   </div>
                 </div>
+              </div>
+              <div className="col-12 col-lg-5 col-xl-6 hero-form ">
+                <HeroForm />
               </div>
             </div>
           </div>

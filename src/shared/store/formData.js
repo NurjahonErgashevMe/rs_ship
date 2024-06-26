@@ -18,6 +18,11 @@ export const useFormDataStore = create()((set, get) => ({
       vehicle_runs: null,
     },
   },
+  current: 0,
+  setCurrent: (newCurrent) =>
+    set({
+      current: newCurrent,
+    }),
   isChecked: false,
   setIsChecked: (data) =>
     set({
