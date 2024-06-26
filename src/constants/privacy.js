@@ -1,6 +1,6 @@
 export const privacyData = [
   {
-    heading: "Privacy and policy",
+    heading: "",
     texts: [
       `Welcome! Here at RS Logistics we know that privacy is important to you and to us. In order to provide you (the individual inquiring about our services about accessing our site) with the best service and most accurate pricing, RS Logistics collects information about you, and we will not share your contact information with any third parties. The following privacy policy explains exactly what information we collect, why we collect it, and who we share it with, as well as how we keep it protected. You are also recommended to read our Terms of Use to understand the general rules about your use of this Site, and any additional terms that may apply when you access particular services or materials on certain areas of this Site. While using our website and its content, you are agreeing to and consenting to the most recent version of this Policy. “We,” “our” means RS Logistics and its affiliates. “You,” “your,” ”visitor,” or “user” means the individual accessing this site and our services.`,
       `This Site is not intended for children use. If you are a minor (under the age of 18), you can use this service only with the consent of your parents or legal guardians. If you are a minor, please do not submit any personal information to this Site. IF YOU ARE 13 YEARS OR YOUNGER, PLEASE DO NOT USE THIS SITE OR ANY OF ITS SERVICES FOR ANY PURPOSE AT ANY TIME. This Site is not intended for any children under the age of 13.`,
