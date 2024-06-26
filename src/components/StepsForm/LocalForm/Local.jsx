@@ -65,14 +65,11 @@ export default function LocalForm({ withoutStepper, classNames }) {
       ...formData?.information, // datada bu kelmayapti
     };
 
+    console.log(Letter);
+
     if (formRef.current) {
       emailjs
-        .send(
-          "service_12jpk0s",
-          "template_etg7nav",
-          Letter,
-          "sinTCYk7iYAfE19am"
-        )
+        .send("service_5m5l81h", "template_jtd4319", Letter, "TMTJsljJrgQEYvZQu" ,)
         .then(
           () => {
             countDown();

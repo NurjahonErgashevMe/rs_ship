@@ -1,4 +1,6 @@
 @import "src/assets/scss/default/variables";
+@import "src/assets/scss/default/typography";
+
 .wrap {
   width: 100%;
   display: flex;
@@ -19,7 +21,9 @@
 
 
 .mask_input {
+  font-family: $body-font !important;
   border-radius: 10px;
+  height: 40px;
   &:hover {
     border: 1px solid $theme-color;
   }

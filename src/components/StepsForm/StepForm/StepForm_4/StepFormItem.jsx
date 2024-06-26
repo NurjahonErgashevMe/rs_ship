@@ -34,9 +34,11 @@ export default function StepFormItemFour({
               {
                 required: true,
                 type: "string",
+                message : ""
               },
             ]}
             name={"firstname"}
+            placeholder={""}
             label="First name"
           />
           <ProFormText
@@ -45,10 +47,12 @@ export default function StepFormItemFour({
               {
                 type: "string",
                 required: true,
+                message: "",
               },
             ]}
             name={"lastname"}
             label="Last name"
+            placeholder={""}
           />
         </Space>
         <Space
@@ -89,11 +93,12 @@ export default function StepFormItemFour({
               {
                 required: true,
                 type: "email",
-                validateTrigger: "",
+                message : ""
               },
             ]}
             name={"email"}
             label="Email"
+            placeholder={""}
           />
         </Space>
         <div>
@@ -102,9 +107,11 @@ export default function StepFormItemFour({
               {
                 required: false,
                 type: "string",
+                message:""
               },
             ]}
             name={"comment"}
+            placeholder={""}
             label="Comment"
             style={{
               // resize: "none",
