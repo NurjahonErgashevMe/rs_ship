@@ -3,6 +3,7 @@ import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 // import ServiceCategory from './ServiceCategory';
 import ServiceContact from "./ServiceContact";
+import { ADDRESS, EMAIL, PHONE_NUMBER } from "../../constants";
 // import ServiceDownload from './ServiceDownload';
 
 function ServiceSidebar() {
@@ -52,17 +53,17 @@ function ServiceSidebar() {
         <div className="contact-us">
           <ServiceContact
             title="Phone Number"
-            text="908 9098 987 98"
+            text={PHONE_NUMBER}
             icon={<AiOutlinePhone />}
           />
           <ServiceContact
             title="Email Address"
-            text="info@supportexam.com"
+            text={EMAIL}
             icon={<AiOutlineMail />}
           />
           <ServiceContact
             title="Office Address"
-            text="14/A, Ping Tower, NYC"
+            text={ADDRESS}
             icon={<FaMapMarkerAlt />}
           />
         </div>

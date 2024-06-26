@@ -10,29 +10,33 @@ function ServiceDetails({ images, faq, content, service_opinion }) {
       <DetailsCarousel images={images} />
       <DetailsContent content={content} />
 
-      <div className="service-opinion">
-        <h2>Service opinions</h2>
-        <div className="process-setps pt-0">
-          {service_opinion?.map((item, index) => (
-            <ProcessItem
-              key={item.key}
-              number={`0${index + 1}`}
-              heading={item.text}
-              text={item.description}
+      {service_opinion?.length ? (
+        <div className="service-opinion">
+          <h2>Service opinions</h2>
+          <div className="process-setps pt-0">
+            {service_opinion?.map((item, index) => (
+              <ProcessItem
+                key={item.key}
+                number={index + 1 < 10 ? `0${index + 1}` : index + 1}
+                heading={item.text}
+                text={item.description}
+              />
+            ))}
+          </div>
+        </div>
+      ) : null}
+      {faq?.length ? (
+        <div className="faq-content pl-0 ">
+          <h2>What Is Include?</h2>
+          {faq?.map((item, index) => (
+            <FaqAccordion
+              key={index}
+              question={item.heading}
+              answer={item.text}
             />
           ))}
         </div>
-      </div>
-      <div className="faq-content pl-0 ">
-        <h2>What Is Include?</h2>
-        {faq?.map((item, index) => (
-          <FaqAccordion
-            key={index}
-            question={item.heading}
-            answer={item.text}
-          />
-        ))}
-      </div>
+      ) : null}
     </div>
   );
 }
