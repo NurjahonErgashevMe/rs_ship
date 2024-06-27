@@ -11,7 +11,7 @@ export default function SEO({
       lang="en"
       openGraph={{
         ogImage: {
-          ogImage: "/logo.png",
+          ogImage: "/favicon.ico",
           ogImageAlt: "RS Logistics - Auto Shipping & Auto Carrier Services in the USA",
           ogImageWidth: 1200,
           ogImageHeight: 630,
@@ -20,7 +20,7 @@ export default function SEO({
       }}
       twitter={{
         twitterSummaryCard: {
-          summaryCardImage: "/logo.png",
+          summaryCardImage: "/favicon.ico",
           summaryCardImageAlt: "RS Logistics  - Auto Shipping & Auto Carrier Services in the USA",
           summaryCardSiteUsername: "refineship",
         },
