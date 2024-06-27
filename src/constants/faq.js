@@ -13,7 +13,7 @@ const faqData = [
     question:
       "Can I arrange the pick up and delivery of my vehicle for specific dates and times?",
     answer:
-      "Due to the numerous variables that could unexpectedly affect a Carrier’s progress during transit, it is very difficult to guarantee exact dates and times for pick-up and/or delivery. Delays caused by other customers using the same hauler, traffic congestion, accidents, mechanical malfunctions and weather are common factors that may cause a Carrier to run behind schedule. Yellowfin will always work to ensure the service you receive matches your requested timeline as closely as possible, however we will never make guarantees to our customers that we are not absolutely certain our partners can honor.",
+      "Due to the numerous variables that could unexpectedly affect a Carrier’s progress during transit, it is very difficult to guarantee exact dates and times for pick-up and/or delivery. Delays caused by other customers using the same hauler, traffic congestion, accidents, mechanical malfunctions and weather are common factors that may cause a Carrier to run behind schedule. RS Logistics will always work to ensure the service you receive matches your requested timeline as closely as possible, however we will never make guarantees to our customers that we are not absolutely certain our partners can honor.",
   },
 
   {
@@ -32,15 +32,25 @@ const faqData = [
   },
   {
     id: uuidv4(),
-    question: "How do I pay for the service?",
-    answer:
-      "Our payment process is simple and straightforward. We do not require upfront payment for our services. Once we successfully match a Carrier to your requirements, we would then process a deposit. The balance for your shipment will be due on pick-up or delivery. This can be paid directly to the driver with cash, cashier’s check, or money order.",
+    question: "How long does it take to deliver my car?",
+    answer: `
+        Although much depends on the time of year and specific route, the standard transit time-table is as follows:
+Up to 500 miles: 1 day
+500-800 miles: 1-2 days
+800-1100 miles: 2-3 days
+1100-1400 miles: 3-4 days
+1400-1800 miles: 4-5 days
+1800-2100 miles: 5-6 days
+2100-2500 miles: 6-8 days
+2500-2800 miles: 7-9 days
+2800-plus miles: 9-11 days
+      `,
   },
   {
     id: uuidv4(),
     question: "Are there any hidden fees or extra charges?",
     answer:
-      "A Yellowfin quote is never automated and has been personally assessed by a Dedicated Yellowfin Advisor. This means that your quote will always be the most current assessment of the Standard Rates demanded by the market at the specific time that your shipping request is processed. This quote is also all-inclusive; covering all taxes, tolls, bumper-to-bumper insurance and door-to-door service. Additionally, you are able to send up to 100 lbs of your personal belongings absolutely free. Be sure to receive authorisation for this luggage prior to your pickup date.",
+      "A RS Logistics quote is never automated and has been personally assessed by a Dedicated RS Logistics Advisor. This means that your quote will always be the most current assessment of the Standard Rates demanded by the market at the specific time that your shipping request is processed. This quote is also all-inclusive; covering all taxes, tolls, bumper-to-bumper insurance and door-to-door service. Additionally, you are able to send up to 100 lbs of your personal belongings absolutely free. Be sure to receive authorisation for this luggage prior to your pickup date.",
   },
 ];
 

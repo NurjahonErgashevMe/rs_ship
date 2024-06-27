@@ -18,13 +18,13 @@ function Promo() {
             <div className="block-contents ml-xl-5 mt-5 mt-xl-0">
               <span>Easy transportation of goods</span>
               <h1>Ship with us!</h1>
-              <h4>RS Logistics : Delivering Excellence on Every Truckload</h4>
+              <h4>RS Logistics : Delivering Excellence on Every Vehicle</h4>
               <p>
-                Transport your goods easily and reliably with us! We ensure fast
-                and secure delivery, offering tailored solutions for any
+                Transport your vehicles easily and reliably with us! We ensure
+                fast and secure delivery, offering tailored solutions for any
                 business. Trust the professionals and enjoy peace of mind,
-                knowing your goods are in safe hands. Choose us for flawless
-                logistics!
+                knowing your vehicles are in safe hands. Choose us for flawless
+                transportation!
               </p>
               <Link to="/contact" className="theme-btn">
                 Get In Touch
