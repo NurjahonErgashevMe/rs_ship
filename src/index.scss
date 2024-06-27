@@ -28,3 +28,8 @@
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
 }
+
+
+.video-controls-disable::-webkit-media-controls {
+    display: none !important;
+}

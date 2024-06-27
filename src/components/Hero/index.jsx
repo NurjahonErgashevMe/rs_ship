@@ -16,9 +16,10 @@ function Hero() {
             muted
             autoPlay
             loop
+            playsinline
             alt="Banner"
             aria-hidden="true"
-            className="hero-image"
+            className="hero-image video-controls-disable"
           />
           <div className="container">
             <div className="row wrapper mx-auto">
